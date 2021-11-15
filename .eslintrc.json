@@ -13,5 +13,8 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-unused-vars": "warn",
+        "import/prefer-default-export": "warn",
+        "no-restricted-syntax": "warn"
     }
 }

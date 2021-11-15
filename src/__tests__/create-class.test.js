@@ -1,4 +1,4 @@
-import { Character } from '../js/Character.js';
+import { Character } from '../js/Character';
 
 test('Check class creation', () => {
   const result = {

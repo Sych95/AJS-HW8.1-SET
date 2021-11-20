@@ -43,7 +43,7 @@ test('Test convert Set-collection to Array', () => {
   const character2 = new Character('Triss', 'Magician');
   const resultTeam = new Team();
   resultTeam.addAll(character1, character2);
-  let result = resultTeam.toArray();
+  const result = resultTeam.toArray();
 
   const expected = [{
     name: 'Azmodan', type: 'Daemon', level: 1, health: 100, attack: undefined, defence: undefined,

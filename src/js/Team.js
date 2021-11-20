@@ -16,6 +16,6 @@ export class Team {
   }
 
   toArray() {
-    this.members = Array.from(this.members);
+    return Array.from(this.members);
   }
 }

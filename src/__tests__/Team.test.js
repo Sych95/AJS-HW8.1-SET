@@ -41,9 +41,9 @@ test('Test addAll (several characters)', () => {
 test('Test convert Set-collection to Array', () => {
   const character1 = new Character('Azmodan', 'Daemon');
   const character2 = new Character('Triss', 'Magician');
-  const result = new Team();
-  result.addAll(character1, character2);
-  result.toArray();
+  const resultTeam = new Team();
+  resultTeam.addAll(character1, character2);
+  let result = resultTeam.toArray();
 
   const expected = [{
     name: 'Azmodan', type: 'Daemon', level: 1, health: 100, attack: undefined, defence: undefined,
@@ -51,5 +51,5 @@ test('Test convert Set-collection to Array', () => {
     name: 'Triss', type: 'Magician', level: 1, health: 100, attack: undefined, defence: undefined,
   }];
 
-  expect(result.members).toEqual(expected);
+  expect(result).toEqual(expected);
 });
